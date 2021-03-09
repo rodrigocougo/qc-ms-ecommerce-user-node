@@ -22,8 +22,8 @@ services:
     ports:
       - ${SERVER_PORT}:${SERVER_PORT}
     volumes:
-      - .:/usr/src/app
-    working_dir: /usr/src/app
+      - .:/usr/src/app/qc-ms-ecommerce-user-node
+    working_dir: /usr/src/app/qc-ms-ecommerce-user-node
     command: yarn start
     logging:
       driver: "json-file"
