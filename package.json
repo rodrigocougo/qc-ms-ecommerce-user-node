@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nodemon -- -r esm -r dotenv/config ./bin/www",
+    "dev2": "nodemon ./bin/www",
     "start": "pm2 start ./bin/www --watch --no-daemon --node-args=\"-r esm\""
   },
   "dependencies": {
