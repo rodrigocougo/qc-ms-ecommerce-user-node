@@ -22,6 +22,7 @@ class LoginService {
       .then((user) => {
         if (!user || user.length === 0) {
           res.status(404).json({
+            "status": "401",
             "error": "Usuário inválido!"
           });
           return;
@@ -35,6 +36,7 @@ class LoginService {
 
         if (!passwordIsValid) {
           res.status(404).json({
+            "status": "402",
             "error": "Senha inválida!"
           });
           return;
